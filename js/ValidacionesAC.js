@@ -19,7 +19,6 @@
     })
 })()
 
-const formulario = document.querySelector('.formulario');
 
 ///Nombre
 const nombre = document.querySelector('#nombre');
@@ -103,6 +102,62 @@ const ValidarForm = (e) => {
       break;
   }
 }
+
+
+function mostrarCantones() {
+
+  var provincias = document.querySelector('#provincia');
+  var cantoness = document.querySelector('#canton');
+
+  cantoness.innerHTML = "";
+
+  if (provincias.value === "San José") {
+
+    var cantonesP = ['San José', 'Acosta', 'Alajuelita', 'Aserrí', 'Curridabat', 'Desamparados', 'Dota', 'Escazú',
+      'Goicoechea', 'León Cortés', 'Montes de Oca', 'Mora',
+      'Moravia', 'Pérez Zeledón', 'Puriscal', 'Santa Ana',
+      'Tarrazú', 'Tibás', 'Turrubares', 'Vázquez de Coronado'
+    ];
+
+  } else if (provincias.value === "Alajuela") {
+    var cantonesP = ['Alajuela', 'Atenas', 'Grecia', 'Guatuso', 'Los Chiles', 'Naranjo', 'Orotina', 'Palmares', 'Poás',
+      'Río Cuarto', 'San Carlos', 'San Mateo', 'San Ramón', 'Sarchí', 'Upala', 'Zarcero'
+    ];
+  } else if (provincias.value === "Cartago") {
+
+    var cantonesP = ['Cartago', 'Alvarado', 'El Guarco', 'Jiménez',
+      'La Unión', 'Oreamuno', 'Paraíso', 'Turrialba'
+    ];
+
+  } else if (provincias.value === "Heredia") {
+
+    var cantonesP = ['Heredia', 'Barva', 'Belén', 'Flores', 'San Isidro',
+      'San Pablo', 'San Rafael', 'Santa Bárbara', 'Santo Domingo', 'Sarapiquí'
+    ];
+
+  } else if (provincias.value === "Guanacaste") {
+
+    var cantonesP = ['Liberia', 'Abangares', 'Bagaces', 'Cañas', 'Carrillo', 'Hojancha', 'La Cruz',
+      'Nandayure', 'Nicoya', 'Santa Cruz', 'Tilarán'
+    ];
+  } else if (provincias.value === "Puntarenas") {
+
+    var cantonesP = ['Puntarenas', 'Buenos Aires', 'Corredores', 'Coto Brus', 'Esparza', 'Garabito',
+      'Golfito', 'Montes de Oro', 'Osa', 'Parrita', 'Quepos'
+    ];
+  } else if (provincias.value === "Limon") {
+
+    var cantonesP = ['Limón', 'Guácimo', 'Matina', 'Pococí', 'Siquirres', 'Talamanca'];
+  }
+
+  for (var i = 0; i < cantonesP.length; i++) {
+    const op = document.createElement('option');
+    op.value = cantonesP[i];
+    op.innerHTML = cantonesP[i];
+    cantoness.appendChild(op);
+  }
+}
+
 
 
 nombre.addEventListener('input', (e) => ValidarForm(e));
