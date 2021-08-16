@@ -1,0 +1,26 @@
+.contenido {
+    margin-top: 4%;
+    margin-bottom: 7%;
+    margin-left: 5%;
+    margin-right: 5%;
+
+}
+
+.titulo h3{
+    margin-top: 5%;
+    margin-left: 5%;
+    font-weight: 600;
+}
+
+h4{
+    font-weight: 600;
+}
+
+
+textarea{
+    height: 150px;
+}
+
+.col-sm-12 div{
+    padding-bottom: 3%;
+}

@@ -1,0 +1,58 @@
+.btn-social{
+    border-radius: 100px;
+}
+
+#botones{
+    display:flex;
+    justify-content: center;
+}
+
+.contenido section{
+    margin-top: 50px;
+}
+
+.fondodos {
+    background: url('./Img/inicio.jpg')100% no-repeat fixed;
+    padding: 60px;
+}
+
+.margen{
+    margin-top: 100px;
+}
+
+#mo1 {
+    width: 90%;
+}
+
+#carousel #img1{
+    background: linear-gradient(to bottom, rgba(63, 53, 59, 0.3) 0%, rgba(85, 58, 85, 0.856) 75%, #000 100%), 
+    url("Img/Header/he1.jpg");
+}
+
+.abs-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} 
+
+form{
+    width: 650px;
+}
+
+.portafolio-modal .modal-dialog{
+    margin-left: 70px;
+    max-width: 1300px;
+}
+
+.btnColor{
+    background-color:#EA6A16;
+    color: white;
+}
+
+.color{
+    color: #EA6A16
+}
+
+.textoInicio{
+    margin-top: 150px;
+}
