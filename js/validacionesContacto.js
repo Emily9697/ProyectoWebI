@@ -45,15 +45,6 @@ const ValidarForm = (e) => {
         document.getElementById('nombre').classList.remove('is-invalid');
       }
       break;
-    case "correo":
-      if (!Cor.test(e.target.value)) {
-        document.getElementById('correo').classList.add('is-invalid');
-        document.getElementById('correo').classList.remove('is-valid');
-      } else {
-        document.getElementById('correo').classList.add('is-valid');
-        document.getElementById('correo').classList.remove('is-invalid');
-      }
-      break;
     case "telefono":
       if (!Tel.test(e.target.value)) {
         document.getElementById('telefono').classList.add('is-invalid');
@@ -63,10 +54,19 @@ const ValidarForm = (e) => {
         document.getElementById('telefono').classList.remove('is-invalid');
       }
       break;
+    case "correo":
+      if (!Cor.test(e.target.value)) {
+        document.getElementById('correo').classList.add('is-invalid');
+        document.getElementById('correo').classList.remove('is-valid');
+      } else {
+        document.getElementById('correo').classList.add('is-valid');
+        document.getElementById('correo').classList.remove('is-invalid');
+      }
+      break;
+
   }
 }
 
 nombre.addEventListener('input', (e) => ValidarForm(e));
-correo.addEventListener('input', (e) => ValidarForm(e));
 telefono.addEventListener('input', (e) => ValidarForm(e));
-
+correo.addEventListener('input', (e) => ValidarForm(e));
