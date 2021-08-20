@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+
+    <section class="menu">
+
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark sticky-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../Inicio/index.html">
+                    Bienes y Raíces
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+                    aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarContent">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../Nosotros/nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../Casas/catCasas.html">Nuestras Casas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../Otros Servicios/servicios.html">Otros Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../Contacto/contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Usuaios
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="../FormulariosCasas/agregarCasa.html">Agregar Casa</a></li>
+                                <li><a class="dropdown-item" href="../Casas/catCasasAdmin.html">Editar o Eliminar Casas</a>
+                                </li>
+                                <li><a class="dropdown-item" href="../FormulariosServicios/agregarServicios.html">Agregar
+                                        Servicios</a></li>
+                                <li><a class="dropdown-item" href="../Otros Servicios/serviciosAdmin.html">Editar o
+                                        Eliminar Servicios</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item sesion">
+                            <a class="nav-link" href="../Usuario.html">Iniciar Sesión</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+    </section>
+
+    <section class="contenido">
+        <div class="container mt-5" id="conten">
+            <h2 class="mb-4 text-center">Casas en venta</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="f-group">
+                        <label for="">Provincia</label>
+                        <select name="pro" id="provincias" class="form-control" onchange="mostrarCanton()">
+                            <option value=""> -- Elije una provincia -- </option>
+                            <option value="San José">San José</option>
+                            <option value="Alajuela">Alajuela</option>
+                            <option value="Cartago">Cartago</option>
+                            <option value="Heredia">Heredia</option>
+                            <option value="Guanacaste">Guanacaste</option>
+                            <option value="Puntarenas">Puntarenas</option>
+                            <option value="Limon">Limón</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="f-group">
+                        <label for="">Cantón</label>
+                        <select name="cantones" class="form-control" id="cantones">
+                            <option value=""> -- Elije un cantón -- </option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid p-5">
+            <div class="row" id="contenedor">
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+</body>
+
+    <footer class="footer py-4">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-4 text-lg-start">Copyright &copy; Your Website 2021</div>
+                <div class="col-lg-4 my-3 my-lg-0" id="botones">
+                    <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                <div class="col-lg-4 text-lg-end">
+                    <a class="link-dark text-decoration-none me-3" href="#!">Privacy Policy</a>
+                    <a class="link-dark text-decoration-none" href="#!">Terms of Use</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+<!-- Font Awesome icons (free version)-->
+<script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
+<script src="../js/bootstrap.bundle.min.js"></script>
+<script src='../js/objetosCasas.js'></script>
+<script src="../js/crearCasas.js"></script>
+
+
+
+</html>

@@ -1,136 +1,30 @@
-/* .btn-social{
-    border-radius: 100px;
-}
-
-#botones{
-    display:flex;
-    justify-content: center;
-}
-
-.contenido section{
-    margin-top: 50px;
-}
-
-.fondodos {
-    background: url('./Img/inicio.jpg')100% no-repeat fixed;
-    padding: 60px;
-}
-
-.margen{
-    margin-top: 100px;
-}
-
-#mo1 {
-    width: 90%;
-}
-
-.abs-center {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-} 
-
-form{
-    width: 650px;
-}
-
-.btnColor{
-    background-color:#EA6A16;
-    color: white;
-}
-
-.color{
-    color: #EA6A16
-}
-
-.textoInicio{
-    margin-top: 150px;
-}
-
-.icono{
-    font-size: 45px;
-}
-.centrar{
-    padding-left: 20px;
-}
-
-.colorIconos{
-    color: #EA6A16;
-}
-
-.adColor{
-    color: #000000; 
-} */
-
-
-/* body {
-
-    background: #000000;  
-    background: -webkit-linear-gradient(to right, #434343, #000000);  
-    background: linear-gradient(to right, #434343, #000000); 
-    
-
-}
-
-.bg {
-    background-image: url(house.jpg);
-    background-position: center center;
-
-}
-
-.container{
-    width: 75%;
-    margin-top: 5%;
-}
-
-
-
-.btn-primary, .btn-primary:active, .btn-primary:visited {
-    background-color: #DC7633;
-    border: #DC7633;
-} */
-
-
-
-
-
-
-
-
-
-
-
-/* -------------------------------------------------------GENERAL---------------------------------------------------------------*/
-
-.btnColor{
-    background-color:#EA6A16;
-    color: white;
-}
-
-/*FIN GENERAL*/
-
-
-
-/*-----------------------------------------------------INDEX---------------------------------------------------------------------*/
-.fondodos {
-    background: url('./Img/inicio.jpg')100% no-repeat fixed;
-    padding: 60px;
-}
-
-
-
-.color{
-    color: #EA6A16
-}
-
-
-.textoInicio{
-    margin-top: 150px;
-}
-
 /*------------------------------------------------------FIN INDEX--------------------------------------------------------------*/
 
+.btnColor{
+    background-color:#EA6A16;
+    color: white;
+}
 
+.fondodos {
+    background: url('./Img/inicio.jpg')100% no-repeat fixed;
+    padding: 60px;
+}
+
+.btn-social{
+    border-radius: 100px;
+} 
+
+.color{
+    color: #EA6A16
+}
+
+.colorF{
+    color: white;
+}
+
+.textoInicio{
+    margin-top: 150px;
+}
 
 /*-----------------------------------------------------AGREGAR CASAS------------------------------------------------------------*/
 
@@ -148,8 +42,6 @@ form{
     width: 650px;
 }
 
-/* --------------------------------------------------FIN AGREGAR CASAS------------------------------------------------------------*/
-
 /*-------------------------------------------------------EDITAR CASAS-------------------------------------------------------------*/
 
 
@@ -161,9 +53,7 @@ form{
 
 /*----------------------------------------------------AGREGAR Y EDITAR CASAS---------------------------------------------------*/
 
- .btn-social{
-    border-radius: 100px;
-} 
+
 
 #botones{
     display:flex;
@@ -191,39 +81,40 @@ form{
 
 /*--------------------------------------------------------------- CONTACTO ---------------------------------------------------*/
 
-.contenidoContacto {
-
-    margin-top: 4%;
-    margin-bottom: 7%;
-    margin-left: 5%;
-    margin-right: 5%;
-
-}
-
-.titulo h3{
-    margin-top: 5%;
-    margin-left: 5%;
-    font-weight: 600;
-}
-
-h4{
-    font-weight: 600;
-}
-
-
 textarea{
     height: 150px;
-}
-
-.col-sm-12 div{
-    padding-bottom: 3%;
 }
 
 p {
     text-align: justify;
 }
 
-/*-----------------------------------------------------------------FIN CONTACTO------------------------------------------------- */
+.btnContacto{
+    background-color:#fccaa8;
+    color: rgb(214, 92, 11);
+}
+
+.fondoC{
+
+    background: rgba(75, 75, 75, 0.6); padding: 8px; border-radius: 5px; color: white;
+}
+.fondoForm{
+    background-color: #DC7633;
+}
+
+.anchoFormContacto{
+    width: 750px;
+}
+
+.estiloContacto{
+    padding: 8px; 
+    border-radius: 5px; 
+    color: white;
+}
+
+.carousel-inner {
+    height: 600px;
+}
 
 /* ---------------------------------------------login-------------------------------------- */
 .login {
@@ -235,7 +126,7 @@ p {
 
 }
 
-.bg {
+.bgLogin {
     background-image: url(./Img/house.jpg);
     background-position: center center;
 
@@ -247,8 +138,60 @@ p {
 }
 
 
+.bodyRegistro {
 
-.btn-primary, .btn-primary:active, .btn-primary:visited {
-    background-color: #DC7633;
-    border: #DC7633;
+    background: #000000;  
+    background: -webkit-linear-gradient(to right, #434343, #000000);  
+    background: linear-gradient(to right, #434343, #000000); 
+    
+
 }
+
+.bg {
+    background-image: url(Img/registroUsuarios.jpeg);
+    background-position: center center;
+
+}
+
+.containerR{
+    width: 75%;
+    margin-top: 2%;
+}
+
+
+
+.labelL{
+    font-weight: bold;
+}
+/*-------------------------------------------------------------------Agregar y Editar Casa---------------------------------------------------*/
+
+.datosPersonales{
+    border: solid 2px rgb(180, 180, 180); 
+    padding: 5px;
+}
+
+
+.fondoB{
+    background-image: url(../Img/Casas2.jpg);
+}
+
+.fondoF{
+    background: rgba(0, 0, 0, 0.6); 
+    padding: 8px; 
+    border-radius: 5px; 
+    color: white;
+}
+
+
+
+/*-------------------------------------------------------------------Agregar Servicio---------------------------------------------------*/
+
+.datosS{
+    border: solid 2px rgb(180, 180, 180); 
+    padding: 5px;
+}
+
+.ImgBS{
+    background-image: url(./Img/ser.jpg);
+}
+
