@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="../style.css">
+
+
+    <title>Registro</title>
+
+</head>
+
+
+
+<body class="bodyRegistro">
+
+    <section class="formulario">
+        <div class="container containerR rounded shadow">
+            <div class="row">
+                <div class="col-md-6 bg rounded"></div>
+                <div class="col-md-6 bg-white">
+                    <h2 class="font-weight-bold text-center py-2"> Registro </h2>
+                    <form action="../Usuario.html" class="needs-validation" novalidate>
+                        <div class="mb-4">
+
+                            <label for="nombre" class="form-label labelL">Nombre completo</label>
+                            <input type="text" class="form-control" name="nombre" id="nombre" required>
+                            <div class="invalid-feedback">
+                                Debes indicar tu nombre completo.
+                            </div>
+                        </div>
+                        <div class="mb-4">
+
+                            <label for="nombreU" class="form-label labelL">Nombre de Usuario</label>
+                            <input type="text" class="form-control" name="nombreU" id="nombreU" required>
+                            <div class="invalid-feedback">
+                                Debes indicar tu nombre de usuario no menor a 7 dijitos con
+                                letras y números.
+                            </div>
+                        </div>
+
+                        <div class="mb-4">
+
+                            <label for="email" class="form-label labelL">Correo electrónico</label>
+                            <input type="email" class="form-control" name="email" id="email" required>
+                            <div class="invalid-feedback">
+                                Debes indicar tu correo electronico.
+                            </div>
+                        </div>
+                        <div class="mb-4">
+
+                            <label for="password" class="form-label labelL">Contraseña</label>
+                            <input type="password" class="form-control" name="contraseña" id="contraseña" required>
+                            <div class="invalid-feedback">
+                                Debes indicar una contraseña con minimo 8 caracteres, mayusculas, minusculas
+                                y simbolos especiales.
+                            </div>
+                        </div>
+                        <div class="mb-4">
+
+                            <label for="password" class="form-label labelL">Corfirme contraseña</label>
+                            <input type="password" class="form-control" name="confirmContraseña" id="confirmContraseña"
+                                required>
+                            <div class="invalid-feedback">
+                                La contraseña indicada no es la misma que la anterior.
+                            </div>
+                        </div>
+                        <div class="d-grid">
+
+                            <button type="submit" class="btn btnColor" onclick="alerta()">Registrarse</button>
+                        </div>
+                        <br>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/validacionesReUsuarios.js"></script>
+</body>
+
+</html>

@@ -6,8 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Inicio</title>
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <link rel="stylesheet" href="../style.css">
 </head>
 
 <body>
@@ -15,7 +15,7 @@
   <section class="menu">
     <nav class="navbar navbar-expand-sm navbar-dark bg-dark sticky-top">
       <div class="container-fluid">
-        <a class="navbar-brand" href="./index.html">
+        <a class="navbar-brand" href="../Inicio/index.html">
           Bienes y Raíces
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
@@ -26,13 +26,34 @@
         <div class="collapse navbar-collapse" id="navbarContent">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link" href="./Nosotros/Nosotros.html">Nosotros</a>
+              <a class="nav-link" href="../Nosotros/nosotros.html">Nosotros</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./Casas/CatCasas.html">Nuestras Casas</a>
+              <a class="nav-link" href="../Casas/catCasas.html">Nuestras Casas</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./Contacto/contacto.html">Contacto</a>
+              <a class="nav-link" href="../Otros Servicios/servicios.html">Otros Servicios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../Contacto/contacto.html">Contacto</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Usuaios
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="../FormulariosCasas/agregarCasa.html">Agregar Casa</a></li>
+                <li><a class="dropdown-item" href="../Casas/catCasasAdmin.html">Editar o Eliminar Casas</a>
+                </li>
+                <li><a class="dropdown-item" href="../FormulariosServicios/agregarServicios.html">Agregar
+                    Servicios</a></li>
+                <li><a class="dropdown-item" href="../Otros Servicios/serviciosAdmin.html">Editar o
+                    Eliminar Servicios</a></li>
+              </ul>
+            </li>
+            <li class="nav-item sesion">
+              <a class="nav-link" href="../Usuario.html">Iniciar Sesión</a>
             </li>
           </ul>
         </div>
@@ -49,14 +70,13 @@
     ">
       <div class="" style="background-color: rgba(0, 0, 0, 0.6);">
         <div class="textoInicio">
-          <div class="text-white">
+          <div class="text-white pb-2">
             <h1 class="mb-3">Lucas Suarez Loria</h1>
-            <h4 class="mb-3">Asesor Inmobiliario</h4>
+            <h4 class="mb-3">Mejoramos día con día</h4>
           </div>
         </div>
       </div>
     </div>
-    <!-- Background image -->
   </section>
 
 
@@ -112,7 +132,7 @@
           <h2 style="text-align: right; color: rgb(255, 255, 255);">Todas nuestras casas</h2>
         </div>
         <div class="col-12 text-end">
-          <a class="btn btnColor" href="Casas/CatCasas.html" role="button">Bucar Propiedad</a>
+          <a class="btn btnColor" href="../Casas/catCasas.html" role="button">Bucar Propiedad</a>
         </div>
       </div>
     </div>
@@ -120,6 +140,7 @@
 
   </section>
 
+</body>
 
   <footer class="footer py-4">
     <div class="container">
@@ -139,12 +160,7 @@
   </footer>
 
 
-</body>
-
-
-
-
 <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
-<script src="js/bootstrap.bundle.min.js"></script>
+<script src="../js/bootstrap.bundle.min.js"></script>
 
 </html>
