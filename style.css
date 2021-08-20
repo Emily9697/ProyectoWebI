@@ -1,58 +1,151 @@
-.btn-social{
-    border-radius: 100px;
+/*-------------------------------------------------------GENERAL---------------------------------------------------------------*/
+
+.btnColor {
+    background-color: #EA6A16;
+    color: white;
 }
 
-#botones{
-    display:flex;
-    justify-content: center;
-}
+/*FIN GENERAL*/
 
-.contenido section{
-    margin-top: 50px;
-}
 
+
+/*-----------------------------------------------------INDEX---------------------------------------------------------------------*/
 .fondodos {
     background: url('./Img/inicio.jpg')100% no-repeat fixed;
     padding: 60px;
 }
 
-.margen{
-    margin-top: 100px;
+
+
+.color {
+    color: #EA6A16
 }
 
-#mo1 {
-    width: 90%;
+
+.textoInicio {
+    margin-top: 150px;
 }
 
-#carousel #img1{
-    background: linear-gradient(to bottom, rgba(63, 53, 59, 0.3) 0%, rgba(85, 58, 85, 0.856) 75%, #000 100%), 
-    url("Img/Header/he1.jpg");
-}
+/*------------------------------------------------------FIN INDEX--------------------------------------------------------------*/
+
+
+
+/*-----------------------------------------------------AGREGAR CASAS------------------------------------------------------------*/
 
 .abs-center {
     display: flex;
     align-items: center;
     justify-content: center;
-} 
+}
 
-form{
+.formAgregCasa {
     width: 650px;
 }
 
-.portafolio-modal .modal-dialog{
-    margin-left: 70px;
-    max-width: 1300px;
+/* --------------------------------------------------FIN AGREGAR CASAS------------------------------------------------------------*/
+
+/*-------------------------------------------------------EDITAR CASAS-------------------------------------------------------------*/
+
+
+.formEditCasa {
+    width: 650px;
 }
 
-.btnColor{
-    background-color:#EA6A16;
-    color: white;
+/* ----------------------------------------------------FIN EDITAR CASAS---------------------------------------------------------*/
+
+/*----------------------------------------------------AGREGAR Y EDITAR CASAS---------------------------------------------------*/
+#botones {
+    display: flex;
+    justify-content: center;
 }
 
-.color{
-    color: #EA6A16
+/*----------------------------------------------------FIN AGREGAR Y EDITAR CASAS-----------------------------------------------*/
+
+
+/*----------------------------------------------------- --INFORMACIÓN CASAS----------------------------------------------------*/
+
+.icono {
+    font-size: 45px;
 }
 
-.textoInicio{
-    margin-top: 150px;
+.centrar {
+    padding-left: 20px;
 }
+
+.colorIconos {
+    color: #EA6A16;
+}
+
+/*-----------------------------------------------------------FIN INFORMACIÓN CASAS-------------------------------------------*/
+
+
+/*--------------------------------------------------------------- CONTACTO ---------------------------------------------------*/
+
+.contenidoContacto {
+
+    margin-top: 4%;
+    margin-bottom: 7%;
+    margin-left: 5%;
+    margin-right: 5%;
+
+}
+
+.titulo h3 {
+    margin-top: 5%;
+    margin-left: 5%;
+    font-weight: 600;
+}
+
+h4 {
+    font-weight: 600;
+}
+
+
+textarea {
+    height: 150px;
+}
+
+.col-sm-12 div {
+    padding-bottom: 3%;
+}
+
+p {
+    text-align: justify;
+}
+
+/*-----------------------------------------------------------------FIN CONTACTO-------------------------------------------------*/
+
+/*-------------------------------------------------------------------REGISTRO---------------------------------------------------*/
+
+.bRegistro{
+
+    background: #000000;  
+    background: -webkit-linear-gradient(to right, #434343, #000000);  
+    background: linear-gradient(to right, #434343, #000000); 
+    
+
+}
+
+.bg {
+    background-image: url(Img/registro.jpg);
+    background-position: center center;
+
+}
+
+.container{
+    width: 75%;
+    margin-top: 2%;
+}
+
+
+
+.btn-primary, .btn-primary:active, .btn-primary:visited {
+    background-color: #DC7633;
+    border: #DC7633;
+}
+
+label{
+    font-weight: bold;
+}
+
+

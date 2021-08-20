@@ -6,9 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio</title>
-    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../CSS/bootstrap.min.css">
     <link rel="stylesheet" href="../style.css">
-    <link rel="stylesheet" href="Casas.js">
 </head>
 
 <body>
@@ -31,7 +30,7 @@
                             <a class="nav-link" href="../Nosotros/Nosotros.html">Nosotros</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="Casas/CatCasas.html">Nuestras Casas</a>
+                            <a class="nav-link" href="CatCasas.html">Nuestras Casas</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="../Contacto/contacto.html">Contacto</a>
@@ -45,21 +44,15 @@
 
     <!--Inicio Contenedor tarjetas-->
     <section class="provincias">
-        <div class="container mt-5" id="contendor">
+        <div class="container mt-5" id="conten">
             <h2 class="mb-4 text-center">Casa en Venta</h2>
             <div class="row">
                 <div class="col-md-4 mb-4">
                     <div class="f-group">
                         <label for="">Provincia</label>
-                        <select name="pro" id="provincias" class="form-control" onchange="rellenar(this.id,'cantones')">
+                        <select name="pro" id="provincias" class="form-control">
                             <option value=""> -- Elije una provincia -- </option>
-                            <option value="sanjose">San José</option>
-                            <option value="alajuela">Alajuela</option>
-                            <option value="cartago">Cartago</option>
-                            <option value="heredia">Heredia</option>
-                            <option value="guanacaste">Guanacaste</option>
-                            <option value="puntarenas">Puntarenas</option>
-                            <option value="limon">Limón</option>
+
                         </select>
                     </div>
                 </div>
@@ -74,540 +67,17 @@
             </div>
         </div>
         <div class="container-fluid p-5">
-            <div class="row">
-                <div class="col-md-12">
-                    <h2 class="mb-4 text-center">Resultados</h2>
-                    <!--Inicio Tarjeta-->
-                    <div class="row ">
-                        <div class="col-md-4">
-                            <div class="card h-100">
-                                <img src="https://q-xx.bstatic.com/images/hotel/max1024x768/205/205961549.jpg"
-                                    class="card-img-top" alt="..." />
-                                <div class="card-body">
-                                    <h5 class="card-title">Casa con Piscina</h5>
-                                    <p class="card-text">
-                                        <p><b>Provincia:</b> San José</p>
-                                        <p><b>Cantón:</b> Acosta</p>
-                                        <p><b>Precio:</b> 1000000</p>
-                                    </p>
-                                    <button type="button" class="btn btnColor" data-bs-toggle="modal"
-                                        data-bs-target="#Modal2">
-                                        Detalles sobre la casa
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                        <!--Fin Tarjeta-->
-                        <!--Inicio Tarjeta-->
-                        <div class="col-md-4">
-                            <div class="card h-100">
-                                <img src="https://alricgalindez.com/alricWpshsj/wp-content/uploads/2021/02/1-Casa-Palma-Ph.-Albano-Garcia-1024x683.jpg"
-                                    class="card-img-top" alt="..." />
-                                <div class="card-body">
-                                    <h5 class="card-title">Casa con terraza</h5>
-                                    <p class="card-text">
-                                        Casa moderna con una bonita terraza.
-                                        <br>
-                                        <b>Precio $3000</b>
-                                    </p>
-                                    <button type="button" class="btn btnColor" data-bs-toggle="modal"
-                                        data-bs-target="#Modal3">
-                                        Detalles sobre la casa
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                        <!--Fin Tarjeta-->
-                        <!--Inicio Tarjeta-->
-                        <div class="col-md-4">
-                            <div class="card h-100">
-                                <img src="https://casarosabaya.com/wp-content/uploads/2021/03/DSC05479-HDR-1536x1024.jpg"
-                                    class="card-img-top" alt="..." />
-                                <div class="card-body">
-                                    <h5 class="card-title">Casa frente al Mar</h5>
-                                    <p class="card-text">
-                                        Casa frente al mar, espaciosa y de doble planta.
-                                        <br>
-                                        <b>Precio $3000</b>
-                                    </p>
-                                    <button type="button" class="btn btnColor" data-bs-toggle="modal"
-                                        data-bs-target="#Modal1">
-                                        Detalles sobre la casa
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--Fin Tarjeta-->
-                    <!--Inicio Tarjeta-->
-                    <div class="row ">
-                        <div class="col-md-4">
-                            <div class="card h-100">
-                                <img src="https://q-xx.bstatic.com/images/hotel/max1024x768/205/205961549.jpg"
-                                    class="card-img-top" alt="..." />
-                                <div class="card-body">
-                                    <h5 class="card-title">Casa con Piscina</h5>
-                                    <p class="card-text">
-                                        Casa espaciosa con una linda y grande piscina.
-                                        <br>
-                                        <b>Precio $3000</b>
-                                    </p>
-                                    <button type="button" class="btn btnColor" data-bs-toggle="modal"
-                                        data-bs-target="#Modal2">
-                                        Detalles sobre la casa
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                        <!--Fin Tarjeta-->
-                        <!--Inicio Tarjeta-->
-                        <div class="col-md-4">
-                            <div class="card h-100">
-                                <img src="https://alricgalindez.com/alricWpshsj/wp-content/uploads/2021/02/1-Casa-Palma-Ph.-Albano-Garcia-1024x683.jpg"
-                                    class="card-img-top" alt="..." />
-                                <div class="card-body">
-                                    <h5 class="card-title">Casa con terraza</h5>
-                                    <p class="card-text">
-                                        Casa moderna con una bonita terraza.
-                                        <br>
-                                        <b>Precio $3000</b>
-                                    </p>
-                                    <button type="button" class="btn btnColor" data-bs-toggle="modal"
-                                        data-bs-target="#Modal3">
-                                        Detalles sobre la casa
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                        <!--Fin Tarjeta-->
-                        <!--Inicio Tarjeta-->
-                        <div class="col-md-4">
-                            <div class="card h-100">
-                                <img src="https://casarosabaya.com/wp-content/uploads/2021/03/DSC05479-HDR-1536x1024.jpg"
-                                    class="card-img-top" alt="..." />
-                                <div class="card-body">
-                                    <h5 class="card-title">Casa frente al Mar</h5>
-                                    <p class="card-text">
-                                        Casa frente al mar, espaciosa y de doble planta.
-                                        <br>
-                                        <b>Precio $3000</b>
-                                    </p>
-                                    <button type="button" class="btn btnColor" data-bs-toggle="modal"
-                                        data-bs-target="#Modal1">
-                                        Detalles sobre la casa
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--Fin Tarjeta-->
-                    <!--Inicio Tarjeta-->
-                    <div class="row ">
-                        <div class="col-md-4">
-                            <div class="card h-100">
-                                <img src="https://q-xx.bstatic.com/images/hotel/max1024x768/205/205961549.jpg"
-                                    class="card-img-top" alt="..." />
-                                <div class="card-body">
-                                    <h5 class="card-title">Casa con Piscina</h5>
-                                    <p class="card-text">
-                                        Casa espaciosa con una linda y grande piscina.
-                                        <br>
-                                        <b>Precio $3000</b>
-                                    </p>
-                                    <button type="button" class="btn btnColor" data-bs-toggle="modal"
-                                        data-bs-target="#Modal2">
-                                        Detalles sobre la casa
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                        <!--Fin Tarjeta-->
-                        <!--Inicio Tarjeta-->
-                        <div class="col-md-4">
-                            <div class="card h-100">
-                                <img src="https://alricgalindez.com/alricWpshsj/wp-content/uploads/2021/02/1-Casa-Palma-Ph.-Albano-Garcia-1024x683.jpg"
-                                    class="card-img-top" alt="..." />
-                                <div class="card-body">
-                                    <h5 class="card-title">Casa con terraza</h5>
-                                    <p class="card-text">
-                                        Casa moderna con una bonita terraza.
-                                        <br>
-                                        <b>Precio $3000</b>
-                                    </p>
-                                    <button type="button" class="btn btnColor" data-bs-toggle="modal"
-                                        data-bs-target="#Modal3">
-                                        Detalles sobre la casa
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                        <!--Fin Tarjeta-->
-                        <!--Inicio Tarjeta-->
-                        <div class="col-md-4">
-                            <div class="card h-100">
-                                <img src="https://casarosabaya.com/wp-content/uploads/2021/03/DSC05479-HDR-1536x1024.jpg"
-                                    class="card-img-top" alt="..." />
-                                <div class="card-body">
-                                    <h5 class="card-title">Casa frente al Mar</h5>
-                                    <p class="card-text">
-                                        Casa frente al mar, espaciosa y de doble planta.
-                                        <br>
-                                        <b>Precio $3000</b>
-                                    </p>
-                                    <button type="button" class="btn btnColor" data-bs-toggle="modal"
-                                        data-bs-target="#Modal1">
-                                        Detalles sobre la casa
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--Fin Tarjeta-->
-                    <!--Inicio Tarjeta-->
-                    <div class="row">
-                        <div class="col-md-4">
-                            <div class="card h-100">
-                                <img src="https://q-xx.bstatic.com/images/hotel/max1024x768/205/205961549.jpg"
-                                    class="card-img-top" alt="..." />
-                                <div class="card-body">
-                                    <h5 class="card-title">Casa con Piscina</h5>
-                                    <p class="card-text">
-                                        Casa espaciosa con una linda y grande piscina.
-                                        <br>
-                                        <b>Precio $3000</b>
-                                    </p>
-                                    <button type="button" class="btn btnColor" data-bs-toggle="modal"
-                                        data-bs-target="#Modal2">
-                                        Detalles sobre la casa
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                        <!--Fin Tarjeta-->
-                        <!--Inicio Tarjeta-->
-                        <div class="col-md-4">
-                            <div class="card h-100">
-                                <img src="https://alricgalindez.com/alricWpshsj/wp-content/uploads/2021/02/1-Casa-Palma-Ph.-Albano-Garcia-1024x683.jpg"
-                                    class="card-img-top" alt="..." />
-                                <div class="card-body">
-                                    <h5 class="card-title">Casa con terraza</h5>
-                                    <p class="card-text">
-                                        Casa moderna con una bonita terraza.
-                                        <br>
-                                        <b>Precio $3000</b>
-                                    </p>
-                                    <button type="button" class="btn btnColor" data-bs-toggle="modal"
-                                        data-bs-target="#Modal3">
-                                        Detalles sobre la casa
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                        <!--Fin Tarjeta-->
-                        <!--Inicio Tarjeta-->
-                        <div class="col-md-4">
-                            <div class="card h-100">
-                                <img src="https://casarosabaya.com/wp-content/uploads/2021/03/DSC05479-HDR-1536x1024.jpg"
-                                    class="card-img-top" alt="..." />
-                                <div class="card-body">
-                                    <h5 class="card-title">Casa frente al Mar</h5>
-                                    <p class="card-text">
-                                        Casa frente al mar, espaciosa y de doble planta.
-                                        <br>
-                                        <b>Precio $3000</b>
-                                    </p>
-                                    <button type="button" class="btn btnColor" data-bs-toggle="modal"
-                                        data-bs-target="#Modal1">
-                                        Detalles sobre la casa
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--Fin Tarjeta-->
-                    <!--Inicio Tarjeta-->
-                    <div class="row">
-                        <div class="col-md-4">
-                            <div class="card h-100">
-                                <img src="https://q-xx.bstatic.com/images/hotel/max1024x768/205/205961549.jpg"
-                                    class="card-img-top" alt="..." />
-                                <div class="card-body">
-                                    <h5 class="card-title">Casa con Piscina</h5>
-                                    <p class="card-text">
-                                        Casa espaciosa con una linda y grande piscina.
-                                        <br>
-                                        <b>Precio $3000</b>
-                                    </p>
-                                    <button type="button" class="btn btnColor" data-bs-toggle="modal"
-                                        data-bs-target="#Modal2">
-                                        Detalles sobre la casa
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                        <!--Fin Tarjeta-->
-                        <!--Inicio Tarjeta-->
-                        <div class="col-md-4">
-                            <div class="card h-100">
-                                <img src="https://alricgalindez.com/alricWpshsj/wp-content/uploads/2021/02/1-Casa-Palma-Ph.-Albano-Garcia-1024x683.jpg"
-                                    class="card-img-top" alt="..." />
-                                <div class="card-body">
-                                    <h5 class="card-title">Casa con terraza</h5>
-                                    <p class="card-text">
-                                        Casa moderna con una bonita terraza.
-                                        <br>
-                                        <b>Precio $3000</b>
-                                    </p>
-                                    <button type="button" class="btn btnColor" data-bs-toggle="modal"
-                                        data-bs-target="#Modal3">
-                                        Detalles sobre la casa
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                        <!--Fin Tarjeta-->
-                        <!--Inicio Tarjeta-->
-                        <div class="col-md-4">
-                            <div class="card h-100">
-                                <img src="https://casarosabaya.com/wp-content/uploads/2021/03/DSC05479-HDR-1536x1024.jpg"
-                                    class="card-img-top" alt="..." />
-                                <div class="card-body">
-                                    <h5 class="card-title">Casa frente al Mar</h5>
-                                    <p class="card-text">
-                                        Casa frente al mar, espaciosa y de doble planta.
-                                        <br>
-                                        <b>Precio $3000</b>
-                                    </p>
-                                    <button type="button" class="btn btnColor" data-bs-toggle="modal"
-                                        data-bs-target="#Modal1">
-                                        Detalles sobre la casa
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--Fin Tarjeta-->
-                    <!--Inicio Tarjeta-->
-                    <div class="row">
-                        <div class="col-md-4">
-                            <div class="card h-100">
-                                <img src="https://q-xx.bstatic.com/images/hotel/max1024x768/205/205961549.jpg"
-                                    class="card-img-top" alt="..." />
-                                <div class="card-body">
-                                    <h5 class="card-title">Casa con Piscina</h5>
-                                    <p class="card-text">
-                                        Casa espaciosa con una linda y grande piscina.
-                                        <br>
-                                        <b>Precio $3000</b>
-                                    </p>
-                                    <button type="button" class="btn btnColor" data-bs-toggle="modal"
-                                        data-bs-target="#Modal2">
-                                        Detalles sobre la casa
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                        <!--Fin Tarjeta-->
-                        <!--Inicio Tarjeta-->
-                        <div class="col-md-4">
-                            <div class="card h-100">
-                                <img src="https://alricgalindez.com/alricWpshsj/wp-content/uploads/2021/02/1-Casa-Palma-Ph.-Albano-Garcia-1024x683.jpg"
-                                    class="card-img-top" alt="..." />
-                                <div class="card-body">
-                                    <h5 class="card-title">Casa con terraza</h5>
-                                    <p class="card-text">
-                                        Casa moderna con una bonita terraza.
-                                        <br>
-                                        <b>Precio $3000</b>
-                                    </p>
-                                    <button type="button" class="btn btnColor" data-bs-toggle="modal"
-                                        data-bs-target="#Modal3">
-                                        Detalles sobre la casa
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                        <!--Fin Tarjeta-->
-                        <!--Inicio Tarjeta-->
-                        <div class="col-md-4">
-                            <div class="card h-100">
-                                <img src="https://casarosabaya.com/wp-content/uploads/2021/03/DSC05479-HDR-1536x1024.jpg"
-                                    class="card-img-top" alt="..." />
-                                <div class="card-body">
-                                    <h5 class="card-title">Casa frente al Mar</h5>
-                                    <p class="card-text">
-                                        Casa frente al mar, espaciosa y de doble planta.
-                                        <br>
-                                        <b>Precio $3000</b>
-                                    </p>
-                                    <button type="button" class="btn btnColor" data-bs-toggle="modal"
-                                        data-bs-target="#Modal1">
-                                        Detalles sobre la casa
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--Fin Tarjeta-->
-                    <!--Inicio Tarjeta-->
-                    <div class="row">
-                        <div class="col-md-4">
-                            <div class="card h-100">
-                                <img src="https://q-xx.bstatic.com/images/hotel/max1024x768/205/205961549.jpg"
-                                    class="card-img-top" alt="..." />
-                                <div class="card-body">
-                                    <h5 class="card-title">Casa con Piscina</h5>
-                                    <p class="card-text">
-                                        Casa espaciosa con una linda y grande piscina.
-                                        <br>
-                                        <b>Precio $3000</b>
-                                    </p>
-                                    <button type="button" class="btn btnColor" data-bs-toggle="modal"
-                                        data-bs-target="#Modal2">
-                                        Detalles sobre la casa
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                        <!--Fin Tarjeta-->
-                        <!--Inicio Tarjeta-->
-                        <div class="col-md-4">
-                            <div class="card h-100">
-                                <img src="https://alricgalindez.com/alricWpshsj/wp-content/uploads/2021/02/1-Casa-Palma-Ph.-Albano-Garcia-1024x683.jpg"
-                                    class="card-img-top" alt="..." />
-                                <div class="card-body">
-                                    <h5 class="card-title">Casa con terraza</h5>
-                                    <p class="card-text">
-                                        Casa moderna con una bonita terraza.
-                                        <br>
-                                        <b>Precio $3000</b>
-                                    </p>
-                                    <button type="button" class="btn btnColor" data-bs-toggle="modal"
-                                        data-bs-target="#Modal3">
-                                        Detalles sobre la casa
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                        <!--Fin Tarjeta-->
-                        <!--Inicio Tarjeta-->
-                        <div class="col-md-4">
-                            <div class="card h-100">
-                                <img src="https://casarosabaya.com/wp-content/uploads/2021/03/DSC05479-HDR-1536x1024.jpg"
-                                    class="card-img-top" alt="..." />
-                                <div class="card-body">
-                                    <h5 class="card-title">Casa frente al Mar</h5>
-                                    <p class="card-text">
-                                        Casa frente al mar, espaciosa y de doble planta.
-                                        <br>
-                                        <b>Precio $3000</b>
-                                    </p>
-                                    <button type="button" class="btn btnColor" data-bs-toggle="modal"
-                                        data-bs-target="#Modal1">
-                                        Detalles sobre la casa
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--Fin Tarjeta-->
+            <div class="row" id="contenedor">
 
 
-                    
-                    <!--Inicio de Modal-->
-                    <div class="container-sm mb-2">
-                        <div class="portafolio-modal modal fade" id="Modal1" tabindex="-1" aria-labelledby="exampleModalLabel"
-                            aria-hidden="true">
-                            <div class="modal-dialog" id="mo1">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h5 class="modal-title" id="exampleModalLabel">Casa Frete al mar</h5>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                            aria-label="Close"></button>
-                                    </div>
-                                    <div class="modal-body">
-                                        <img class="img-fluid d-block" src="../Img/Casas/mar.jpg" alt="..." />
-                                        <p>Compra este tur y viajaras por las cuidades mas turisticas de Mexico
-                                            conociendo
-                                            su cultura y tradiciones, todo esto por un costo de $1614,67 dolares, con
-                                            ospedaje y tres tiempos de comida incluidos.
-                                        </p>
-                                    </div>
-                                    <div class="modal-footer">
-                                        <a class="btn btnColor btn-xl text-uppercase" href="#"
-                                            type="button">Contactanos</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--Fin de Modal-->
-
-                    <!--Inicio de Modal-->
-                    <div class="container-sm mb-2">
-                        <div class="modal fade" id="Modal2" tabindex="-1" aria-labelledby="exampleModalLabel"
-                            aria-hidden="true">
-                            <div class="modal-dialog">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h5 class="modal-title" id="exampleModalLabel">Casa con Piscina</h5>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                            aria-label="Close"></button>
-                                    </div>
-                                    <div class="modal-body">
-                                        <img class="img-fluid d-block mx-auto" src="../Img/Casas/piscina.jpg"
-                                            alt="..." />
-                                        <p>Compra este tur y viajaras por las cuidades mas turisticas de Mexico
-                                            conociendo
-                                            su cultura y tradiciones, todo esto por un costo de $1614,67 dolares, con
-                                            ospedaje y tres tiempos de comida incluidos.
-                                        </p>
-                                    </div>
-                                    <div class="modal-footer">
-                                        <a class="btn btnColor btn-xl text-uppercase" href="#"
-                                            type="button">Contactanos</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--Fin de Modal-->
-
-                    <!--Inicio de Modal-->
-                    <div class="container-sm mb-2">
-                        <div class="modal fade" id="Modal3" tabindex="-1" aria-labelledby="exampleModalLabel"
-                            aria-hidden="true">
-                            <div class="modal-dialog">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h5 class="modal-title" id="exampleModalLabel">Casa con Terraza</h5>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                            aria-label="Close"></button>
-                                    </div>
-                                    <div class="modal-body">
-                                        <img class="img-fluid d-block mx-auto" src="../Img/Casas/terraza.jpg"
-                                            alt="..." />
-                                        <p>Compra este tur y viajaras por las cuidades mas turisticas de Mexico
-                                            conociendo
-                                            su cultura y tradiciones, todo esto por un costo de $1614,67 dolares, con
-                                            ospedaje y tres tiempos de comida incluidos.
-                                        </p>
-                                    </div>
-                                    <div class="modal-footer">
-                                        <a class="btn btnColor btn-xl text-uppercase" href="#"
-                                            type="button">Contactanos</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
 
+        </div>
 
     </section>
 
-    <!--Fin de Modal-->
+ 
+
 
     <footer class="footer py-4">
         <div class="container">
@@ -634,7 +104,9 @@
 <!-- Font Awesome icons (free version)-->
 <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
 <script src="../js/bootstrap.bundle.min.js"></script>
-<script src="Casas.js"></script>
+<script src='../js/Objetos.js'></script>
+<script src="../js/CrearCasas.js"></script>
+
 
 
 </html>

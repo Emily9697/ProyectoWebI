@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <link rel="stylesheet" href="../CSS/bootstrap.min.css">
   <title>Formulario</title>
   <link rel="stylesheet" href="../style.css">
 </head>
@@ -49,7 +49,7 @@
     <div class="row">
       <div class="col px-md-5">
         <div class="abs-center">
-          <form method="GET" style="background: rgba(0, 0, 0, 0.6); padding: 8px; border-radius: 5px; color: white;" class="needs-validation" novalidate>
+          <form class="formAgregCasa" method="GET" style="background: rgba(0, 0, 0, 0.6); padding: 8px; border-radius: 5px; color: white;" class="needs-validation" novalidate>
             <h2 style="text-align: center;">Agregar casa</h2>
             <div class="col-md-12">
               <label for="validationCustom01" class="form-label">Nombre</label>
@@ -81,7 +81,34 @@
                 Debes indicar tu email.
               </div>
             </div>
-            <label for="validationCustom05" class="form-label">Datos del inmueble</label>
+
+            <fieldset>
+              <div class="row">
+                <div class="col-md-4">
+              <label for="validationCustom02" class="form-label">Cuartos</label>
+              <input type="number" name="cuartos" class="form-control" id="cuartos" max="10" min="1" placeholder="1" required>
+              <div class="invalid-feedback">
+                Debes el número de cuartos que posee la casa.
+              </div>
+            </div>
+            <div class="col-md-4">
+              <label for="validationCustom02" class="form-label">Baños</label>
+              <input type="number" name="baños" class="form-control" id="baños" max="10" min="1" placeholder="1" required>
+              <div class="invalid-feedback">
+                Debes el número de baños que posee la casa.
+              </div>
+            </div>
+            <div class="col-md-4">
+              <label for="validationCustom02" class="form-label">Carros</label>
+              <input type="number" name="cuartos" class="form-control" id="cuartos" max="10" min="1"  placeholder="1" required>
+              <div class="invalid-feedback">
+                Debes el número de carros que caben en la casa.
+              </div>
+              </div>
+            </div>
+            </fieldset>
+            
+            <label for="validationCustom05" class="form-label">Descripción del inmueble</label>
               <div class="form-floating">
                 <textarea class="form-control" name="datos" id="floatingTextarea2"
                   style="height: 100px"  required></textarea>
@@ -108,7 +135,7 @@
               <br>
               <div class="btn-toolbar d-flex justify-content-center align-items-center pb-3" role="toolbar"
               aria-label="Toolbar with button groups">
-              <button type="submit" name="enviar" class="btn btn-primary">Enviar</button>
+              <button type="submit" name="enviar" id="botones" class="btn btnColor">Enviar</button>
               <br>
             </div>
           </form>
@@ -120,7 +147,7 @@
   </div>
 
   <script src="../js/bootstrap.bundle.min.js"></script>
-  <script src="ValidacionesAC.js"></script>
+  <script src="../js/ValidacionesAC.js"></script>
 </body>
 
 

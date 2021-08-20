@@ -1,6 +1,4 @@
 function rellenar(prov, cant) {
-
-
     var prov = document.getElementById(prov);
     var cant = document.getElementById(cant);
 
@@ -31,20 +29,19 @@ function rellenar(prov, cant) {
             'san pablo|San Pablo', 'san rafael|San Rafael', 'santa barbara|Santa Bárbara', 'santo domingo|Santo Domingo', 'sarapiqui|Sarapiquí'
         ];
 
-    }else if (prov.value === "guanacaste") {
+    } else if (prov.value === "guanacaste") {
 
-        var opciones = ['liberia|Liberia','abangares|Abangares','bagaces|Bagaces','cañas|Cañas','carrillo|Carrillo','hojancha|Hojancha','la cruz|La Cruz',
-        'nandayure|Nandayure','nicoya|Nicoya','santa cruz|Santa Cruz','tilara|Tilarán'
+        var opciones = ['liberia|Liberia', 'abangares|Abangares', 'bagaces|Bagaces', 'cañas|Cañas', 'carrillo|Carrillo', 'hojancha|Hojancha', 'la cruz|La Cruz',
+            'nandayure|Nandayure', 'nicoya|Nicoya', 'santa cruz|Santa Cruz', 'tilara|Tilarán'
         ];
-    }else if (prov.value === "puntarenas") {
+    } else if (prov.value === "puntarenas") {
 
-        var opciones = ['puntarenas|Puntarenas','buenos aires|Buenos Aires','corredores|Corredores','coto brus|Coto Brus','esperanza|Esparza','garabito|Garabito',
-        'golfito|Golfito','montes de oro|Montes de Oro','osa|Osa','parrita|Parrita','quepos|Quepos'
+        var opciones = ['puntarenas|Puntarenas', 'buenos aires|Buenos Aires', 'corredores|Corredores', 'coto brus|Coto Brus', 'esperanza|Esparza', 'garabito|Garabito',
+            'golfito|Golfito', 'montes de oro|Montes de Oro', 'osa|Osa', 'parrita|Parrita', 'quepos|Quepos'
         ];
-    }else if (prov.value === "limon") {
+    } else if (prov.value === "limon") {
 
-        var opciones = ['limon|Limón','gucimo|Guácimo','matina|Matina','pococi|Pococí','siquirres|Siquirres','talamanca|Talamanca'
-        ];
+        var opciones = ['limon|Limón', 'gucimo|Guácimo', 'matina|Matina', 'pococi|Pococí', 'siquirres|Siquirres', 'talamanca|Talamanca'];
     }
 
     for (var option in opciones) {
