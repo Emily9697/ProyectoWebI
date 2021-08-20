@@ -21,7 +21,7 @@
 
 ///Nombre
 const nombre = document.querySelector('#nombre');
-const Nom = new RegExp('^[a-zA-Z]{3,15}$');
+const Nom = new RegExp('[a-zA-Z ]{2,254}');
 
 ////Telefono
 const telefono = document.querySelector('#telefono');
