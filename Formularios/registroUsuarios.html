@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="../style.css">
+
+
+    <title>Registro</title>
+
+</head>
+
+
+
+<body class="bodyRegistro">
+
+
+
+    <div class="container containerR rounded shadow">
+
+        <div class="row align-items-stretch ">
+
+            <div class="col bg d-none  d-lg-block col-md-5 col-lg-5 col-xl-6  rounded"></div>
+
+            <div class="col bg-white  p-5 rounded-end ">
+
+                <h2 class="font-weight-bold text-center py-2"> Registro </h2>
+
+
+                <form class="needs-validation" novalidate>
+
+                    <div class="mb-4">
+
+                        <label for="nombre" class="form-label labelL">Nombre completo</label>
+                        <input type="text" class="form-control" name="nombre" id="nombre">
+                        <div class="invalid-feedback">
+                            Debes indicar tu nombre completo.
+                        </div>
+                    </div>
+
+                    <div class="mb-4">
+
+                        <label for="cedula" class="form-label labelL">Cédula</label>
+                        <input [type="number" ] class="form-control" name="cedula" id="cedula">
+                        <div class="invalid-feedback">
+                            Debes indicar tu número de cedula.
+                        </div>
+                    </div>
+
+                    <div class="mb-4">
+
+                        <label for="email" class="form-label labelL">Correo electrónico</label>
+                        <input type="email" class="form-control" name="email" id="email">
+                        <div class="invalid-feedback">
+                            Debes indicar tu correo electronico.
+                        </div>
+                    </div>
+                    <div class="mb-4">
+
+                        <label for="password" class="form-label labelL">Contraseña</label>
+                        <input type="password" class="form-control" name="contraseña" id="contraseña">
+                        <div class="invalid-feedback">
+                            Debes indicar una contraseña con minimo 8 caracteres, mayusculas, minusculas
+                            y simbolos especiales.
+                        </div>
+                    </div>
+
+                    <div class="mb-4">
+
+                        <label for="password" class="form-label labelL">Corfirme contraseña</label>
+                        <input type="password" class="form-control" name="confirmContraseña" id="confirmContraseña">
+                        <div class="invalid-feedback">
+                            La contraseña indicada no es la misma que la anterior.
+                        </div>
+                    </div>
+                    <!-- alerta -->
+                    <div class="col-md-12">
+                        <div id="alert1" class="alert alert-primary alert-dismissible collapse" role="alert"
+                            style="width: 630px; height: -5px;">
+                            Se registro correctamente<a href="../Formularios/Usuario.html" class="alert-link">haga clic aquí</a>.Para
+                            volver a inicio de sesión.
+                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                        </div>
+                    </div>
+                    <!-- alerta -->
+                    <div class="d-grid">
+
+                        <button type="submit" class="btn btn-primary" data-bs-toggle="collapse" href="#alert1"
+                        role="button" aria-expanded="false" aria-controls="alert1">Registrarse</button>
+
+                    </div>
+
+                </form>
+            </div>
+        </div>
+
+
+
+    </div>
+
+    <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/validacionesReUsuarios.js"></script>
+</body>
+
+</html>
